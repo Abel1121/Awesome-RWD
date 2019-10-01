@@ -40,7 +40,6 @@ body {
   height: 100%;
 }
 .header {
-  color: $white;
   display: flex;
   justify-content: space-between;
   &__logo-image {
@@ -63,12 +62,15 @@ body {
   font-size: 15px;
 
   &__list {
+    cursor: pointer;
+    color: $white;
     padding: 0 8px 0 1px;
     display: flex;
     justify-content: center;
     align-items: center;
   }
   &__contact {
+    cursor: pointer;
     text-align: center;
     width: 147px;
     height: 45px;
@@ -76,6 +78,10 @@ body {
     border: 3px solid #ffffff;
     box-sizing: border-box;
     border-radius: 5px;
+    &:hover{
+      background-color: $white;
+      color: $black;
+    }
   }
 }
 .about {
@@ -85,7 +91,7 @@ body {
   margin-bottom: 107px;
 
   &__description {
-    margin: 118px auto;
+    margin: 117px auto;
     font-family: "Raleway", sans-serif;
     font-weight: 200;
     text-align: center;
@@ -93,7 +99,7 @@ body {
     height: 120px;
     font-size: 35px;
     line-height: 43px;
-    letter-spacing: 0.5px;
+    letter-spacing: 0.45px;
     
     &-white {
       font-weight: 600;
@@ -102,7 +108,11 @@ body {
     }
   }
   &__circlesuqare {
-    margin-top: 10px;
+    width: 105px;
+    height: 105px;
+    cursor: pointer;
+    display: block;
+    margin-top: 12px;
   }
 }
 .footer{
@@ -150,24 +160,22 @@ body {
     display: flex;
     align-items: center;
     font-size: 16px;
-    }
-    
-    &__icon::after{
+    a::before{
       content: "/";
-      display: block;
+      margin-left: 14px;
+      margin-right: 9px;
     }
+  }
+    
   &__fb {
-    margin-right: 18px;
     width: 24px;
     height: 24px;
   }
   &__twitter {
-    margin-right: 18px;
     width: 28px;
     height: 28px;
   }
   &__google{
-    margin-right: 18px;
     width: 30px;
     height: 30px;
   }
