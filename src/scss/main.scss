@@ -91,7 +91,7 @@ body {
   margin-bottom: 107px;
 
   &__description {
-    margin: 117px auto;
+    margin: 117px auto 129px;
     font-family: "Raleway", sans-serif;
     font-weight: 200;
     text-align: center;
@@ -108,12 +108,20 @@ body {
     }
   }
   &__circlesuqare {
-    width: 105px;
-    height: 105px;
     cursor: pointer;
-    display: block;
-    margin-top: 12px;
+    transform: rotate(0deg);
+    transition: transform 2s ease-in-out;
+    z-index:1;
+    display: inline-block;
+    position: relative; 
   }
+}
+.object{
+  position: relative; 
+  z-index: -1
+}
+.roll {
+  transform: rotate(360deg);
 }
 .footer{
   display: flex;
